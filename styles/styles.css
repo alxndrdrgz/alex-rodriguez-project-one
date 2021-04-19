@@ -288,3 +288,12 @@ a {
 img {
   max-width: 100%;
 }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+footer {
+  background-color: #2C2C2C;
+}
