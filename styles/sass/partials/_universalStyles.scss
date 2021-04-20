@@ -6,6 +6,7 @@ $ice: #EFFDF3;
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 .wrapper {
@@ -15,5 +16,9 @@ img {
 
 footer {
     background-color: $black;
+    color: $white;
 }
 
+li a:hover {
+    border-bottom: 2rem $seaGreen solid;
+}

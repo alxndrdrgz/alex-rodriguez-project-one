@@ -13,42 +13,46 @@
     <!-- Header starts here -->
     <header>
         <div class="wrapper">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                        Home
-                        </a>
-                    </li> 
-                    <li>
-                        <a href="">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="blog.html">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="imgContainer">
-                <img src="assets/header-box-image.jpg" alt="camera lens">
+            <div class="flexHeader">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                            Home
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="#">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1 class="home">Captured</h1>
             </div>
-            <h1>Captured</h1>
+        </div>
+        <div class="imgContainerHome">
+            <img src="assets/header-box-image.jpg" alt="camera lens">
         </div>
     </header>
 
     <!-- Start of the first about section -->
     <section class="sectionOne">
-        <h2>What is captured?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut rerum necessitatibus illum magni sunt nihil harum sint minima ipsam sed. Dignissimos accusamus eum totam consectetur saepe dolorem distinctio non repudiandae.</p>
-        <a href="">Find Out More</a>
+        <div class="wrapper">
+            <h2>What is captured?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut rerum necessitatibus illum magni sunt nihil harum sint minima ipsam sed. Dignissimos accusamus eum totam consectetur saepe dolorem distinctio non repudiandae.</p>
+            <a href="">Find Out More</a>
+        </div>
     </section>
 
     <!-- Start of the second section -->
@@ -72,20 +76,31 @@
     <!-- Start of section 3 -->
     <section class="sectionThree">
         <div class="wrapper">
-            <h3>Top Picks</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, iusto! Nihil animi pariatur recusandae quae?
-            </p>
+            <div class="textContainer">
+                <i class="fas fa-camera"></i>
+                <h3>Top Picks</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, iusto! Nihil animi pariatur recusandae quae?
+                </p>
+                
+                <i class="fas fa-users"></i>
+                <h3>Community</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam aperiam praesentium commodi quis, esse fugit?
+                </p>
+                
+                <i class="fas fa-file"></i>
+                <h3>Blog</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aspernatur sapiente a ratione iusto eveniet?
+                </p>
     
-            <h3>Community</h3>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam aperiam praesentium commodi quis, esse fugit?
-            </p>
-    
-            <h3>Blog</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aspernatur sapiente a ratione iusto eveniet?
-            </p>
+                <i class="fas fa-phone"></i>
+                <h3>Get in touch</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolor illum excepturi id eveniet exercitationem dolores dolorum?
+                </p>
+            </div>
         </div>
     </section>
 
@@ -93,7 +108,8 @@
     <div class="banner">
         <img src="assets/banner.jpg" alt="a map and travel items">
     </div>
-
+    
+    <!--  -->
     <section class="sectionFour">
         <div class="wrapper">
             <img src="assets/small-box.jpg" alt="A rearview of a person looking at their camera with a mountain in the background">

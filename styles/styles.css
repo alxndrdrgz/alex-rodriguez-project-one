@@ -237,7 +237,7 @@ html {
 }
 
 html {
-  font-size: 125%;
+  font-size: 62.5%;
 }
 
 p {
@@ -256,11 +256,14 @@ li,
 a,
 button {
   text-transform: uppercase;
+  font-style: italic;
 }
 
 h1 {
   font-size: 13.8rem;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .otherTitle {
@@ -287,6 +290,7 @@ a {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 .wrapper {
@@ -296,4 +300,75 @@ img {
 
 footer {
   background-color: #2C2C2C;
+  color: #FAFAFA;
+}
+
+li a:hover {
+  border-bottom: 2rem #4CEEA7 solid;
+}
+
+header {
+  background-image: url("../assets/header-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
+  padding-bottom: 8rem;
+  position: relative;
+}
+
+.flexHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 65rem;
+}
+
+nav {
+  margin-left: calc(100% / 2);
+  margin-top: 3rem;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul li a {
+  padding: 0.5rem 2rem;
+  margin: 2rem 1rem;
+}
+
+li a:hover,
+li a:focus {
+  border-bottom: 5px #4CEEA7 solid;
+}
+
+.home {
+  z-index: 10;
+}
+
+.imgContainerHome {
+  position: absolute;
+  right: 0;
+  bottom: -20rem;
+  border-left: 5rem solid #FDFA69;
+  border-top: 5rem solid #FDFA69;
+  border-bottom: 5rem solid #FDFA69;
 }

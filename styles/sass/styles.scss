@@ -1,6 +1,54 @@
 @import "partials/setup";
+@import "partials/mixins";
 @import "partials/typography";
 @import "partials/mixins";
 @import "partials/universalStyles";
 
+//header styles below:
 
+header {
+    @include imgUrl(url('../assets/header-image.jpg'));
+}
+
+.flexHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65rem;
+}
+
+
+nav {
+    margin-left: calc(100% / 2);
+    margin-top: 3rem;
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        li {
+            justify-content: space-between;
+            a {
+                padding: 0.5rem 2rem;
+                margin: 2rem 1rem;
+            }
+        }
+    }
+}
+
+li a:hover,
+li a:focus {
+    border-bottom: 5px $seaGreen solid;
+}
+
+.home {
+    z-index: 10;
+}
+
+.imgContainerHome {
+    position: absolute;
+    right: 0;
+    bottom: -20rem;
+    border-left: 5rem solid $canary;
+    border-top: 5rem solid $canary;
+    border-bottom: 5rem solid $canary;
+}
