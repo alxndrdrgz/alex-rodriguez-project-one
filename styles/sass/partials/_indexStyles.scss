@@ -1,4 +1,6 @@
+//Index specific styles found here
 
+//Header styles
 header {
     @include imgUrl(url('../assets/header-image.jpg'));
 }
@@ -50,4 +52,37 @@ h1.home {
     border-left: 5rem solid $canary;
     border-top: 5rem solid $canary;
     border-bottom: 5rem solid $canary;
+}
+
+//Section One Styles Start Here
+//index.html specific styles 
+
+section.sectionOne {
+    background-color: $ice;
+    height: 80rem;
+}
+
+div.flexContainerOne {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: calc(100% / 3);
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+a.findOut {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: $seaGreen;
+}
+
+.flexContainerOne {
+    .wrapper {
+        p {
+            padding-bottom: 2rem;
+        }
+    }
 }

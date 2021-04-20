@@ -257,6 +257,8 @@ a,
 button {
   text-transform: uppercase;
   font-style: italic;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -373,4 +375,38 @@ h1.home {
   border-left: 5rem solid #FDFA69;
   border-top: 5rem solid #FDFA69;
   border-bottom: 5rem solid #FDFA69;
+}
+
+section.sectionOne {
+  background-color: #EFFDF3;
+  height: 80rem;
+}
+
+div.flexContainerOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: calc(100% / 3);
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+a.findOut {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #4CEEA7;
+}
+
+.flexContainerOne .wrapper p {
+  padding-bottom: 2rem;
 }
