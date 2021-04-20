@@ -12,6 +12,7 @@ header {
 
 .flexHeader {
     display: flex;
+    margin-bottom: 5rem;
     flex-direction: column;
     justify-content: space-between;
     height: 65rem;
@@ -42,6 +43,8 @@ li a:focus {
 
 .home {
     z-index: 10;
+    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 .imgContainerHome {

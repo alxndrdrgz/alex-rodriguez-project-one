@@ -303,15 +303,11 @@ footer {
   color: #FAFAFA;
 }
 
-li a:hover {
-  border-bottom: 2rem #4CEEA7 solid;
-}
-
 header {
   background-image: url("../assets/header-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   padding-bottom: 8rem;
   position: relative;
@@ -321,6 +317,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -362,6 +359,8 @@ li a:focus {
 
 .home {
   z-index: 10;
+  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .imgContainerHome {
