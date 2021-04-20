@@ -357,9 +357,12 @@ li a:focus {
   border-bottom: 5px #4CEEA7 solid;
 }
 
-.home {
+.textHeader {
   z-index: 10;
-  margin-top: 2rem;
+  margin-top: 55rem;
+}
+
+h1.home {
   padding-top: 2rem;
 }
 
