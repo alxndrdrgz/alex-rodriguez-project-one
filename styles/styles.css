@@ -410,3 +410,72 @@ a.findOut {
 .flexContainerOne .wrapper p {
   padding-bottom: 2rem;
 }
+
+.sectionTwo {
+  height: 80rem;
+  background-color: #FAFAFA;
+}
+
+.flexContainerTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.imgContSectOne {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.textBoxRight {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.textBoxRight h3 {
+  margin-left: 20rem;
+  margin-top: 10rem;
+}
+
+.textBoxRight p,
+.textBoxRight a {
+  margin-left: 20rem;
+}
+
+.textBoxRight p {
+  margin-bottom: 4rem;
+}
+
+.imgContSectTwo {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.textBoxLeft {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: right;
+}
+
+.textBoxLeft h3 {
+  margin-right: 20rem;
+  margin-top: 10rem;
+}
+
+.textBoxLeft p,
+.textBoxLeft a {
+  margin-right: 20rem;
+}
+
+.textBoxLeft p {
+  margin-bottom: 4rem;
+}
+
+.readMore {
+  background-color: #4CEEA7;
+  padding: 2rem;
+  margin-top: 2rem;
+}

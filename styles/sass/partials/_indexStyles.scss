@@ -86,3 +86,65 @@ a.findOut {
         }
     }
 }
+
+//Section two styles starting here
+.sectionTwo {
+    height: 80rem;
+    background-color: $white;
+}
+
+.flexContainerTwo {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.imgContSectOne {
+    flex-basis: 50%;
+}
+
+.textBoxRight {
+    flex-basis: 50%;
+    h3 {
+        margin-left: 20rem;
+        margin-top: 10rem;
+    }
+    p, 
+    a {
+        margin-left: 20rem;
+    }
+}
+
+.textBoxRight p {
+    margin-bottom: 4rem;
+}
+
+
+.imgContSectTwo {
+    flex-basis: 50%;
+}
+
+.textBoxLeft {
+    flex-basis: 50%;
+    text-align: right;
+    h3 {
+        margin-right: 20rem;
+        margin-top: 10rem;
+    }
+    p, 
+    a {
+        margin-right: 20rem;
+    }
+}
+
+.textBoxLeft p {
+    margin-bottom: 4rem;
+}
+
+
+
+.readMore {
+    background-color: $seaGreen;
+    padding: 2rem;
+    margin-top: 2rem;
+}
