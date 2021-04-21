@@ -91,20 +91,31 @@ a.findOut {
 .sectionTwo {
     height: 80rem;
     background-color: $white;
+    position: relative;
 }
 
 .gridTwo {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 400px;
-    position:relative;
+    grid-template-rows: 400px;   
 }
 
 .imgContSectOne {
     position: absolute;
+    top: -10rem;
+    left: -3rem;
+    box-shadow: 3rem 3rem $canary;
+}
+
+.imgContSectTwo {
+    position: absolute;
+    top: 50rem;
+    left: 115rem;
+    box-shadow: -3rem -3rem $canary;
 }
 
 .textBoxRight {
+    grid-area: 2/2/-2/span 1;
     h3 {
         margin-left: 20rem;
         margin-top: 10rem;
@@ -120,6 +131,7 @@ a.findOut {
 }
 
 .textBoxLeft {
+    grid-area: 2/1/2/span 1;
     text-align: right;
     h3 {
         margin-right: 20rem;
