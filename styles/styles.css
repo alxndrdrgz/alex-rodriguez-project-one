@@ -489,3 +489,29 @@ a.findOut {
   padding: 2rem;
   margin-top: 2rem;
 }
+
+.sectionThree {
+  padding: 20rem;
+}
+
+.gridThree {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 40% 10% 40%;
+      grid-template-columns: 10% 40% 10% 40%;
+  -ms-grid-rows: 30rem 30rem;
+      grid-template-rows: 30rem 30rem;
+  gap: 1rem;
+}
+
+.gridText1 {
+  margin-left: 0;
+}
+
+.fas {
+  margin-left: 2.5rem;
+  font-size: 4rem;
+  padding: 5%;
+  display: inline;
+  background-color: #4CEEA7;
+}

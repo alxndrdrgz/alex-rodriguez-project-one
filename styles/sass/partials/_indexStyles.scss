@@ -152,3 +152,31 @@ a.findOut {
     padding: 2rem;
     margin-top: 2rem;
 }
+
+//section 3 styles
+
+.sectionThree {
+    padding: 20rem;
+}
+
+.gridThree {
+    display: grid;
+    grid-template-columns: 10% 40% 10% 40%;
+    grid-template-rows: 30rem 30rem;
+    gap: 1rem;
+}
+
+.gridText1 {
+    margin-left: 0;
+}
+
+.fas {
+    margin-left: 2.5rem;
+    font-size: 4rem;
+    padding: 5%;
+    display: inline;
+    background-color: $seaGreen;
+}
+
+
+// grid-area: <grid-row-start> / <grid-column-start> / <grid-row-end> / <grid-column-end>;
