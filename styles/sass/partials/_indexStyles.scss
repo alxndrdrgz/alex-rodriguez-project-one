@@ -56,7 +56,6 @@ h1.home {
 
 //Section One Styles Start Here
 //index.html specific styles 
-
 section.sectionOne {
     background-color: $ice;
     height: 80rem;
@@ -170,13 +169,59 @@ a.findOut {
     margin-left: 0;
 }
 
+.iconCircle {
+    width: 100%;
+}
+
 .fas {
     margin-left: 2.5rem;
     font-size: 4rem;
-    padding: 5%;
+    padding: 15%;
     display: inline;
     background-color: $seaGreen;
+    border-radius: 50%;
 }
 
+//image banner
+div.banner {
+    height: 50rem;
+    background-image: url('../assets/banner.jpg');
+    background-size: cover;
+}
 
-// grid-area: <grid-row-start> / <grid-column-start> / <grid-row-end> / <grid-column-end>;
+//section 4
+.section4 {
+    padding: 8%;
+    background-color: $ice;
+}
+
+.gridBoxTwo p {
+    margin-bottom: 69px;
+    margin-top: 69px;
+}
+
+.imgContFour img {
+    margin-left: 0;
+    box-shadow: 3rem 3rem $canary;
+}
+
+.gridFour {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 1rem;
+}
+
+//section 5
+.section5 {
+    padding: 10% 0;
+}
+
+.imageGallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+//footer styles below. 
+footer {
+    text-align: center;
+}

@@ -508,10 +508,61 @@ a.findOut {
   margin-left: 0;
 }
 
+.iconCircle {
+  width: 100%;
+}
+
 .fas {
   margin-left: 2.5rem;
   font-size: 4rem;
-  padding: 5%;
+  padding: 15%;
   display: inline;
   background-color: #4CEEA7;
+  border-radius: 50%;
+}
+
+div.banner {
+  height: 50rem;
+  background-image: url("../assets/banner.jpg");
+  background-size: cover;
+}
+
+.section4 {
+  padding: 8%;
+  background-color: #EFFDF3;
+}
+
+.gridBoxTwo p {
+  margin-bottom: 69px;
+  margin-top: 69px;
+}
+
+.imgContFour img {
+  margin-left: 0;
+  -webkit-box-shadow: 3rem 3rem #FDFA69;
+          box-shadow: 3rem 3rem #FDFA69;
+}
+
+.gridFour {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  gap: 1rem;
+}
+
+.section5 {
+  padding: 10% 0;
+}
+
+.imageGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer {
+  text-align: center;
 }
