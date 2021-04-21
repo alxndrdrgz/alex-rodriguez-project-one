@@ -93,19 +93,18 @@ a.findOut {
     background-color: $white;
 }
 
-.flexContainerTwo {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
+.gridTwo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px;
+    position:relative;
 }
 
 .imgContSectOne {
-    flex-basis: 50%;
-
+    position: absolute;
 }
 
 .textBoxRight {
-    flex-basis: 50%;
     h3 {
         margin-left: 20rem;
         margin-top: 10rem;
@@ -120,13 +119,7 @@ a.findOut {
     margin-bottom: 4rem;
 }
 
-
-.imgContSectTwo {
-    flex-basis: 50%;
-}
-
 .textBoxLeft {
-    flex-basis: 50%;
     text-align: right;
     h3 {
         margin-right: 20rem;

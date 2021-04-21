@@ -416,23 +416,18 @@ a.findOut {
   background-color: #FAFAFA;
 }
 
-.flexContainerTwo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.gridTwo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 400px;
+      grid-template-rows: 400px;
   position: relative;
 }
 
 .imgContSectOne {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-}
-
-.textBoxRight {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  position: absolute;
 }
 
 .textBoxRight h3 {
@@ -449,14 +444,7 @@ a.findOut {
   margin-bottom: 4rem;
 }
 
-.imgContSectTwo {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-}
-
 .textBoxLeft {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   text-align: right;
 }
 
