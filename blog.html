@@ -10,131 +10,146 @@
 </head>
 <body>
     <!-- Header and nav start here -->
-    <header>
+    <header class="blog">
         <div class="wrapper">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="blog.html">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <h1 class="otherTitle">Blog</h1>
+            <div class="flexHeader">
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1 class="titleTwo">Blog</h1>
+                <div class="imgContainerHeader">
+                    <img src="assets/blog-post-image.jpg" alt="A medium shot of a woman taking a photo in a field of dandelions">
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- Main section start -->
 
     <main class="blogMain">
-        <!-- Aside info section start -->
-        <aside>
-            <h2> About captured</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, delectus? <a href="#">Find out more.</a></p>
-    
-            <h2> Recent posts</h2>
-            <ul>
-                <li>Donec facilisis tortor ut</li>
-                <li>Augue lacinia at viverra</li>
-                <li>Semper sed sapien metus</li>
-                <li>Scelerisque nec pharetra id</li>
-            </ul>
-        </aside>
-    
-        <!-- Blog section -->
-        <article>
-            <div class="imgContainer">
-                <img src="assets/side-blog-image.jpg" alt="">
+        <div class="wrapper">
+            <div class="blogMainFlex">
+                <div class="asideFlexContainer">
+                    <div class="imgContainerBlog">
+                        <img src="assets/side-blog-image.jpg" alt="">
+                    </div>
+                    <aside>
+                        <div class="asideTextBox">
+                            <h2> About captured</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, delectus? <a href="#">Find out more.</a></p>
+                    
+                            <h2> Recent posts</h2>
+                            <ul>
+                                <li>Donec facilisis tortor ut</li>
+                                <li>Augue lacinia at viverra</li>
+                                <li>Semper sed sapien metus</li>
+                                <li>Scelerisque nec pharetra id</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            
+                <!-- Blog section -->
+                <div class="articleCommentsForm">
+                    <article>
+                        <div class="blogHeader">
+                            <h2>Finding great locations</h2>
+                            <p>Monday May 4th, 2019 by Dieula</p>
+                        </div>
+                
+                        <p>
+                        Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh
+                        lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.
+                        </p>
+                        <p>
+                        In imperdiet eros id lacus vesitibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel
+                        justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
+                        Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec Donec viverra eleifend lacu.
+                        </p>
+                        <p>
+                        Lorem ipsem dolor sit amet, cosectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. Un
+                        volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molesetie justo at, auctor
+                        nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam
+                        consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattisl Mauris dignissim semper mattis. Fusce
+                        porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu
+                        tortor posuere luctus.
+                        </p>
+                        <p>
+                        Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis.
+                        Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.
+                        </p>
+                        <p>
+                        Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi
+                        sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.
+                        </p>
+                        <p>
+                        In imperdiet eros id lacus vesitibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel
+                        justo. Maecenas semper suscipit nunc, sed aliquam
+                        </p>
+                    </article>
+                
+                    <!-- Comments section -->
+                    <section class="comments">
+                        <h2>Comments:</h2>
+                        <div class="commentsGrid">
+                            <div class="userCommentJeremy">
+                                <img src="assets/comment-1.jpg" alt="thumbnail photo of a user who commented on post">
+                            </div>
+                            <div class="commentTextBoxJeremy">
+                                <p>Tuesday October 9th, 2018 by Jeremy</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas magnam provident illo itaque magni autem
+                                    odit quia quam iste optio, perferendis error alias consectetur cupiditate a, delectus, sapiente quibusdam.</p>
+                            </div>
+                            <div class="userCommentJulia">
+                                    <img src="assets/comment-2.jpg" alt="thumbnail photo of the user who commented on post">
+                            </div>    
+                            <div class="commentTextBoxJulia">
+                                <p>Wednesday October 10th, 2018 by Julia</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi consectetur possimus ea quam veniam, blanditiis voluptatibus quasi architecto ut porro tenetur numquam obcaecati incidunt totam id ipsum nemo. Vitae, unde.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Comment form -->
+                    <form action="">
+                        <div class="gridForm">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name">
+                
+                            <label for="emailAddress">Email address</label>
+                            <input type="email" name="emailAddress" id="emailAddress">
+                
+                            <label for="commentBox">Comment</label>
+                            <textarea name="commentBox" cols="60" rows="20"></textarea>
+                
+                            <button>Post Comment</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-    
-            <div class="blogHeader">
-                <h2>Finding great locations</h2>
-                <p>Monday May 4th, 2019 by Dieula</p>
-            </div>
-    
-            <p>
-            Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh
-            lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.
-            </p>
-            <p>
-            In imperdiet eros id lacus vesitibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel
-            justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
-            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec Donec viverra eleifend lacu.
-            </p>
-            <p>
-            Lorem ipsem dolor sit amet, cosectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. Un
-            volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molesetie justo at, auctor
-            nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam
-            consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattisl Mauris dignissim semper mattis. Fusce
-            porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu
-            tortor posuere luctus.
-            </p>
-            <p>
-            Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis.
-            Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.
-            </p>
-            <p>
-            Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi
-            sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.
-            </p>
-            <p>
-            In imperdiet eros id lacus vesitibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel
-            justo. Maecenas semper suscipit nunc, sed aliquam
-            </p>
-        </article>
-    
-        <!-- Comments section -->
-        <section class="comments">
-            <h2>Comments:</h2>
-            <div class="userComment jeremy">
-                <div class="imgContainer">
-                    <img src="assets/comment-1.jpg" alt="thumbnail photo of a user who commented on post">
-                </div>
-                <div class="commentTextBox">
-                    <p>Tuesday October 9th, 2018 by Jeremy</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas magnam provident illo itaque magni autem odit quia quam iste optio, perferendis error alias consectetur cupiditate a, delectus, sapiente quibusdam.</p>
-                </div>
-            <div class="userComment Julia">
-                <div class="imgContainer">
-                    <img src="assets/comment-2.jpg" alt="thumbnail photo of the user who commented on post">
-                </div>
-                <div class="comentTextBox">
-                    <p>Wednesday October 10th, 2018 by Julia</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi consectetur possimus ea quam veniam, blanditiis voluptatibus quasi architecto ut porro tenetur numquam obcaecati incidunt totam id ipsum nemo. Vitae, unde.</p>
-                </div>
-            </div>    
-            </div>
-        </section>
-        <!-- Comment form -->
-
-        <form action="">
-            <label for="name">Name</label>
-            <input type="text">
-
-            <label for="email">Email address</label>
-            <input type="text">
-
-            <label for="comment">Comment</label>
-            <input type="text">
-
-            <button>Post Comment</button>
-        </form>
+        </div>
     </main>
 
     <!--  Footer starts here  -->

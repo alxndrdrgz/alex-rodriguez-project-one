@@ -1,0 +1,119 @@
+//This is a partial for the blog.html page
+//Header specific styles start here: 
+
+//Header mixin with image url replaced below:
+header.blog {
+    @include imgUrl(url('../assets/blog-header.jpg'));
+    position: relative;
+}
+
+
+//Blog H1
+h1.titleTwo {
+    padding-bottom: 20rem;
+}
+
+//Blog main styles 
+//Put main section into a flex container and flex the aside sections and articles into two columns. Set main colour to $ice.
+
+main.blogMain {
+    background-color: $ice;
+}
+
+.blogMainFlex {
+    display: flex;
+}
+
+.articleCommentsFormFlex {
+    flex-basis: 60%;
+}
+
+
+//Aside section styles
+//*Apply background colour to section containing "About Captured" and "Recent Posts"
+//*Set this position of asideFlextContainer to relative and set the imgContainerBlog to absolute.
+
+aside {
+    flex-basis: 30%;
+}
+
+div.asideFlexContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.asideTextBox {
+    background-color: $white; 
+    width: 70%;
+    padding: 5rem;
+    margin-top: 60rem;
+    margin-left: 0;
+}
+
+.imgContainerBlog {
+    position: absolute;
+    top: 10rem;
+    left: -30rem;
+}
+
+//Article section styles:
+
+//Box Shadow of $Canary to Img container. Position it absolutely. 
+div.imgContainerHeader{
+    box-shadow: -3rem 3rem $canary;
+    position: absolute;
+    right: 0;
+    bottom: -30rem;
+}
+
+.articleCommentsForm {
+    width: 88%;
+}
+//Canary border to actual article section. 
+article {
+    margin-top: 40%;
+    border-left: 8px solid $canary;
+    border-bottom: 8px solid $canary;
+    padding: 10%;
+}
+
+//Comment section styles:
+section.comments h2 {
+    margin: 10% 0;
+}
+
+.commentsGrid {
+    display: grid;
+    grid-template-columns: 12rem 50rem;
+    grid-template-rows: 10rem 10rem 10rem 10rem;
+    gap: 2rem;
+}
+
+.userCommentJeremy {
+    grid-area: 1/1/span 1;
+}
+.commentTextBoxJeremy {
+        p {
+            margin-bottom: 5%;
+        }
+}
+
+.userCommentJulia {
+    grid-area: 3/1/span 1;
+}
+
+.commentTextBoxJulia {
+    grid-area: 3/2/span 1;
+    p {
+        margin-bottom: 5%;
+    }
+}
+
+//Comment form styles below!
+form {
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 25rem 25rem;
+    grid-template-columns: 10rem 4rem 10rem;
+}

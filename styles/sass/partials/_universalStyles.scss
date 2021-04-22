@@ -19,3 +19,31 @@ footer {
     color: $white;
 }
 
+.flexHeader {
+    display: flex;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65rem;
+}
+
+
+//The code below applies styling to all the navigation bars across all three pages.
+
+nav {
+    margin-left: calc(100% / 2);
+    margin-top: 3rem;
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        li {
+            justify-content: space-between;
+            a {
+                padding: 0.5rem 2rem;
+                margin: 2rem 1rem;
+            }
+        }
+    }
+}
+
