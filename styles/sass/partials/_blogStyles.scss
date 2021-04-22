@@ -76,6 +76,16 @@ article {
     border-left: 8px solid $canary;
     border-bottom: 8px solid $canary;
     padding: 10%;
+    width:100%;
+}
+
+.blogHeader {
+    h2{
+        margin: 2% 0;
+    }
+    p {
+        margin: 2% 0;
+    }
 }
 
 //Comment section styles:

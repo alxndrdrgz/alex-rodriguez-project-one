@@ -1,0 +1,20 @@
+@media (max-width: 414px) {
+
+    .wrapper {
+        width: 400px;
+        max-width: 375px;
+    }
+
+    header {
+        background-color: $ice;
+        background-image: none;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}

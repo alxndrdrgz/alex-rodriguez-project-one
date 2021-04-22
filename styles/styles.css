@@ -736,6 +736,15 @@ article {
   border-left: 8px solid #FDFA69;
   border-bottom: 8px solid #FDFA69;
   padding: 10%;
+  width: 100%;
+}
+
+.blogHeader h2 {
+  margin: 2% 0;
+}
+
+.blogHeader p {
+  margin: 2% 0;
 }
 
 section.comments h2 {
@@ -828,4 +837,34 @@ main {
 .contactInfo {
   width: 25%;
   margin: 10% 0;
+}
+
+@media (max-width: 414px) {
+  .wrapper {
+    width: 400px;
+    max-width: 375px;
+  }
+  header {
+    background-color: #EFFDF3;
+    background-image: none;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
