@@ -1,0 +1,40 @@
+//Contact page specific styles below:
+
+header.contact {
+    @include imgUrl(url('../assets/contact-header.jpg'));
+    height: 57vh;
+}
+
+h1.titleThree {
+    margin-bottom: 20%;
+    padding-left: 13%;
+}
+
+.flexHeaderBlog {
+    display: flex;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    height: 55rem;
+}
+
+
+//Main styles start here. Flex main so that info side bar lives to the side of the contact form. 
+//Position main relative so that form can be positioned absolutely to it.
+
+main {
+    background-color: $ice;
+}
+
+.flexContainerContact {
+    display: flex;
+    flex-wrap: wrap;
+     position: relative;
+}
+
+.contactInfo {
+    width: 25%;
+    margin: 10% 0;
+}
+
+//contact form styles found in _forms.scss

@@ -16,6 +16,12 @@ p {
 body {
     font-family: $playFair;
     font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+button {
+    font-family: $playFair;
+    letter-spacing: 1px;
 }
 
 h1,
@@ -60,6 +66,7 @@ nav {
 a {
     text-decoration: none;
     color: $black;
+    letter-spacing: 1px;
 }
 
 a:visited,

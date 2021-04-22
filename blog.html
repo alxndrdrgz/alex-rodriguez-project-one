@@ -133,19 +133,23 @@
                     </section>
                     
                     <!-- Comment form -->
-                    <form action="">
-                        <div class="gridForm">
-                            <label for="name">Name</label>
+                    <form action="" class="blogForm">
+                        <div class="formNameBlog">
+                             <label for="name">Name</label>
                             <input type="text" name="name" id="name">
-                
+                           </div>
+                            
+                        <div class="formAddress">
                             <label for="emailAddress">Email address</label>
                             <input type="email" name="emailAddress" id="emailAddress">
-                
-                            <label for="commentBox">Comment</label>
-                            <textarea name="commentBox" cols="60" rows="20"></textarea>
-                
-                            <button>Post Comment</button>
                         </div>
+
+                        <div class="commentBoxBlog">
+                            <label for="commentBox">Comment</label>
+                            <textarea name="commentBox" cols="65" rows="20"></textarea>
+                        </div>
+                
+                        <button class="submitBlog">Post Comment</button>
                     </form>
                 </div>
             </div>

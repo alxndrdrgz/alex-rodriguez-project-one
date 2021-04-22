@@ -10,9 +10,9 @@
 </head>
 <body>
     <!-- Header start -->
-    <header>
+    <header class="contact">
         <div class="wrapper">
-            <div class="flexHeader">
+            <div class="flexHeaderBlog">
                 <nav>
                     <ul>
                         <li>
@@ -37,6 +37,7 @@
                         </li>
                     </ul>
                 </nav>
+                <h1 class="titleThree">Get in touch</h1>
             </div>
         </div>
     </header>
@@ -44,41 +45,50 @@
     <!-- Main starts here -->
     <main class="contactMain">
         <div class="wrapper">
-            <!-- Contact form starts here -->
-            <section class="contactForm">
-                <h1 class="otherTitle">Get in touch</h1>
-
-                <form action="submit">
-
-                    <label for="name">Name</label>
-                    <input type="text" placeholder="Name" id="firstName">
-
-                    <label for="email">Email address</label>
-                    <input type="text" placeholder="Email address" id="emailAddress">
-
-                    <label for="message">Message</label>
-                    <input type="text" placeholder="Message">
-
-                    <button type="submit">Submit</button>
-                </form>
-            </section>
-
-            <!-- Informational contact bar starts here -->
-            <aside class="contactInfo">
-                <div class="socialMediaIcons">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-                <div class="infoTextBox">
-                    <h2 class="infoEmail">
-                        info@email.com
-                    </h2>
-                </div>
-            </aside>
+            <div class="flexContainerContact">
+                <!-- Informational side bar starts here -->
+                <aside class="contactInfo">
+                    <div class="socialMediaIcons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="infoTextBox">
+                        <h2 class="infoEmail">
+                            info@email.com
+                        </h2>
+                        <p>123-456-7890</p>
+                        <p>123 Queen Street West, Unit 10
+                            Toronto, Ontario
+                            M5V2D5
+                        </p>
+                    </div>
+                </aside>
+    
+                <!-- Contact form starts here -->
+                <section class="contactForm">
+                    <form action="submit" class="contactFormGrid">
+                        <div class="formName">
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="Name" id="firstName">
+                        </div>
+    
+                        <div class="formAddress">
+                            <label for="email">Email address</label>
+                            <input type="text" placeholder="Email address" id="emailAddress">
+                        </div>
+    
+                        <div class="commentBox">
+                            <label for="commentBox">Message</label>
+                            <textarea name="commentBox" cols="64" rows="10"></textarea>
+                        </div>
+    
+                        <button type="submit" class="submit"">Submit</button>
+                    </form>
+                </section>
+            </div>
         </div>
-
     </main>
     <footer>
         Copyright 2018 HackerYou

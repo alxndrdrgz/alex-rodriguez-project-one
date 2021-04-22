@@ -110,10 +110,4 @@ section.comments h2 {
     }
 }
 
-//Comment form styles below!
-form {
-    padding: 10%;
-    display: grid;
-    grid-template-columns: 25rem 25rem;
-    grid-template-columns: 10rem 4rem 10rem;
-}
+//Comment form styles found in _forms.scss partial

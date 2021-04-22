@@ -1,3 +1,4 @@
+//A mixin header image shortcut! Just replace with asset URL
 @mixin imgUrl($imgValue) {
     background-image: $imgValue;
     background-size: cover;
