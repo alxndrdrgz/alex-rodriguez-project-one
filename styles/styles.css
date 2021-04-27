@@ -290,6 +290,10 @@ nav ul li a {
   margin: 2rem 1rem;
 }
 
+h1 {
+  font-size: 30px;
+}
+
 html {
   font-size: 62.5%;
 }

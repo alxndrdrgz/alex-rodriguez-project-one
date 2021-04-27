@@ -1,14 +1,11 @@
 @import "partials/setup";
-@import "partials/mediaQueries";
 @import "partials/mixins";
-@import "partials/universalStyles";
+@import "partials/universal-styles";
 @import "partials/typography";
 @import "partials/_forms";
-@import "partials/indexStyles";
-@import "partials/blogStyles";
+@import "partials/index-styles";
+@import "partials/blog-styles";
 @import "partials/contact";
+@import "partials/media-queries";
 
 //Please see individual files for more specific styles.
-
-
-
