@@ -1,35 +1,41 @@
 // When the user submits a comment into the text box create a div with two p tags within it that appends their comment onto the page.  
 
-//store variables
-//form
-const form = document.querySelector('form');
-console.log(form);
-const textComment = document.querySelector('textarea').value;
-const userName = document.getElementById('name').value;
-const userEmail = document.getElementById('emailAddress').value;
-//Append new comment content created by event listener to below:
-const commentSection = document.querySelector('.commentsGrid');
+const app = {};
 
-//comment
-
-form.addEventListener('submit', function (event) {
-    console.log(event);
-    event.preventDefault();
-
-    if (textComment !== "" || userName !== "" || userEmail !=="") {
-
-        const newUserImg = document.createElement('div');
-        newUserImg.classList.add('userCommentJulia');
-        console.log(newUserImg.classList);
+app.addComment = function () {
+    app.form.addEventListener('submit', function (event) {
+        event.preventDefault();
+    
+        if (app.textComment !== "" || app.userName !== "" || app.userEmail !=="") {
+    
+            const newUserImg = document.createElement('div');
+            newUserImg.classList.add('userComment');
+            newUserImg.innerHTML = `<img src="assets/comment-2.jpg" alt="thumbnail photo of the user who commented on post">`;
+    
+            const newComment = document.createElement('div');
+            newComment.classList.add('commentTextBox');
         
-        const newComment = document.createElement('div');
-        newComment.classList.add('commentTextBox');
-        console.log(newComment.classList);
+    
+            newComment.innerHTML = 
+            `<p>${app.textComment}</p>
+            <p>${app.userName}</p>`;
+            
+            app.commentSection.appendChild(newUserImg);
+            app.commentSection.appendChild(newComment);
+        }
+    });
+}
 
-        newComment.innerHTML = 
-        `<p>${textComment}</p>
-        <p>${userName}</p>`;
-        
-        commentSection.appendChild(newComment);
-    }
-});
+app.init = function () {
+    app.form = document.querySelector('form');
+    app.textComment = document.querySelector('textarea').value;
+    app.userName = document.getElementById('name').value;
+    app.userEmail = document.getElementById('emailAddress').value;
+    //Append new comment content created by event listener to below:
+    app.commentSection = document.querySelector('.commentsGrid');
+
+    app.addComment();
+}
+
+app.init();
+
