@@ -31,12 +31,15 @@ footer {
 //The code below applies styling to all the navigation bars across all three pages.
 
 nav {
+
     margin-left: calc(100% / 2);
     margin-top: 3rem;
+
     ul {
         display: flex;
         margin: 0;
         padding: 0;
+
         li {
             justify-content: space-between;
             a {
@@ -47,6 +50,3 @@ nav {
     }
 }
 
-h1 {
-    font-size: 30px;
-}

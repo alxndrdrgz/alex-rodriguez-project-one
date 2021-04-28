@@ -91,7 +91,7 @@
                 <div class="gridThree">
     
                     <div class="iconCircle">
-                        <i class="fas fa-camera"></i>
+                        <i class="fas fa-camera" aria-hidden="true"></i>
                     </div>
                     <div class="gridText1">
                         <h3>Top Picks</h3>
@@ -101,7 +101,7 @@
                     </div>
                     
                     <div class="iconCircle">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-users" aria-hidden="true"></i>
                     </div>
                     <div class="gridText2">
                         <h3>Community</h3>
@@ -111,7 +111,7 @@
                     </div>
     
                     <div class="iconCircle">
-                        <i class="fas fa-file"></i>
+                        <i class="fas fa-file" aria-hidden="true"></i>
                     </div>
                     <div class="gridText3">
                         <h3>Blog</h3>
@@ -121,7 +121,7 @@
                     </div>
                     
                     <div class="iconCircle">
-                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-phone" aria-hidden="true"></i>
                     </div>
         
                     <div class="gridText4">
@@ -184,5 +184,29 @@
     <footer>
         Copyright 2018 HackerYou
     </footer>
+<script>
+</script>    
 </body>
 </html>
+<!-- 
+Areas for Improvement:
+Avoid class names like 'sectionOne' which don't give any more information than the html tag is already providing. Class names
+should be descriptive based on the type of content they hold. Something like 'about' tells us much more about this section.
+To hide the decorative icons in 'sectionThree', the attribute aria-hidden="true" can be given to the <i> tags. This stops them
+from being picked up by accessibility devices. If this icon was important to the content, you could give it a name in a <span> and
+hide it with the sr-only class.
+All form inputs must have linked labels by exactly matching the name of the label 'for' attribute and the input 'id'. <textarea>
+also needs a label. These labels can be hidden if needed using the sr-only snippet from the css setup.
+There is a missing alt attribute in blog.html which makes the image inaccessible.
+The mediaQueries sass partial should be imported at the end of styles.scss so that styles they may rely on are above them in
+the cascade.
+Some more time needs to be spent on styling to match the design files properly. Also, more media queries should be written to
+make the site responsive. Right now there is only one at 414px. I'd recommending polishing this project up when you are
+putting it on your portfolio. This PSD conversion is a really great example of HTML and CSS that employers will look at.
+The sass partials don't follow the naming convention of the other files, folders, and repo. It looks like they should be snake-case.
+
+There is inconsistent indentation and spacing in the partials which make it more difficult to read them quickly.
+Class names are very specific so unless you are using the same class name on different files, you should need to be even more
+specific with the tag. Example: button.submit { your styles} can just be .submit { your styles }.
+The index.html is missing the <main> tag which should be between the header and footer. All pages must have a main to be
+accessible.  -->
